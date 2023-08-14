@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mein Konto</title>
+		<link href="css/mein_konto.css" rel="stylesheet">
+		<link href="css/onlineshop.css" rel="stylesheet">
+		<link rel="icon" href="favicon.ico" type="img/x-icon">
+	</head>
+
+	<body>
+			<header>
+				
+				<div class="container">
+					<div class="logo">
+						<a href="index.html"> <img alt="" src="bilder/logo.png"></a>
+					</div>
+					
+					<form class="suchen">
+						<input type="text" placeholder="Wonach suchst du?" name="search">
+						<button class="such_knopf" type="submit"><i class="bi bi-search"></i></button> 
+					</form>
+					
+					<div class="top_rechts">
+						<div class="konto">
+							<a href="mein_konto.html">
+								<i class="bi bi-person-fill"></i>
+								<p>Mein Konto</p>
+							</a>
+						</div>
+						<div class="merkliste">
+							<a href="#">
+								<i class="bi bi-suit-heart-fill"></i>
+								<p>Merkliste</p>
+							</a>
+						</div>
+						<div class="warenkorb">
+							<a href="#">
+								<i class="bi bi-cart4"></i>
+								<p>Warenkorb</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			
+			
+			<nav class="navi">
+				<div class="container">
+					<hr>
+					<div class="links">
+						<a href="index.html">Startseite</a>
+						<a href="lebensmittel.html">Lebensmittel </a>
+						<a href="haushalt_kuche.html">Haushalt und Küche</a>
+						<a href="baumarkt.html">Baumarkt </a>
+						<a href="#">Gesundheit</a>
+						<a href="rezepte.html">Rezepte</a>
+					</div>								
+				</div>
+				<div class="linie"></div>
+					
+				
+			</nav>
+		
+		
+		
+		
+		
+		
+		
+		<!--<button class="loginbtn" onClick="document.getElementById('anmelden_form'). style.display='block'" style="width:auto;">Log</button>-->
+		
+		<div id="anmelden_form" class="anmelden_seite">
+			
+		 	<div  class="form_box">
+				<div  class="button_box">
+					<div id="btn"></div>
+					<button type="button" onClick="login()" class="toggle_btn">Anmelden</button>
+					<button type="button" onClick="register()" class="toggle_btn">Registrieren</button>
+				</div>
+				
+				<form id="anmelden" class="input_gruppe_anmelden">
+					<input type="text" class="input_feld" placeholder="Email" required>
+					<input type="password" class="input_feld" placeholder="Passwort" required>
+					<input type="checkbox" class="check_box"><span class="check_box">Passwort speichern</span>
+					<button type="submit" class="submit_btn">Anmelden</button>
+					<!--<p><a href="#">Datenschutz</a></p>-->
+				</form>
+				
+				
+				<form id="register" class="input_gruppe_register">
+					<input type="text" class="input_feld" placeholder="Vorname" required>
+					<input type="text" class="input_feld" placeholder="Nachname" required>
+					<input type="email" class="input_feld" placeholder="Email" required>
+					<input type="password" class="input_feld" placeholder=" Passwort eingeben" required>
+					<input type="password" class="input_feld" placeholder=" Passwort wiederholen" required>
+					<input type="checkbox" class="check_box"><span>Datenschutzerklärung</span>
+					<button type="submit" class="submit_btn">Registrieren</button>
+					<p><a href="daten_schutz.html">Datenschutz</a></p>
+				</form>
+						
+				
+			</div>
+		
+		
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		<script>
+			var x=document.getElementById('anmelden');
+			var y=document.getElementById('register');
+			var z=document.getElementById('btn');
+			function register()
+			{
+				x.style.left='-400px';
+				y.style.left='50px';
+				z.style.left='110px';
+			}
+			function login()
+			{
+				x.style.left='50px';
+				y.style.left='450px';
+				z.style.left='0px';
+			}
+		
+		</script>
+		<script>
+			var modal =document.getElementById('anmelden_form');
+			window.onclick = function(event)
+			{
+				if (event.target== modal)
+					{
+						modal.style.display="none";
+					}
+			}
+		
+		</script>
+	</body>
+</html>

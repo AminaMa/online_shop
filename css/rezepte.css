@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document Rezepte */
+
+.container .links a:first-child {
+    border-bottom: none;
+}
+
+
+.links a:nth-of-type(6){
+	border-bottom: 1px solid var(--gold-color);
+	
+}
+
+section .container{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	
+}
+
+.rezepte{
+	display: flex;
+    justify-content: space-between;
+	max-height: 30em;
+	overflow: hidden;
+	margin: 10px;
+	
+}
+
+
+.rezepte_img{
+	min-width: 14em;
+}
+
+.rezepte_img img{
+	width: 100%;
+}
+
+.rezepte_info{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+    padding: 70px;
+	color: var(--main-color);
+}
+.rezepte_info h3{
+	color: var(--gold-color);
+}
+
+.rezepte_beschreibung p{
+	line-height: 1.5;
+}
+
+
+.mehr_erfahren {
+	margin-top: 14px;
+	color: var(--main-color);
+	text-decoration: underline var(--gold-color);
+}
+
+.mehr_erfahren:hover{
+	color: var(--hover-color);
+	text-decoration: underline;
+}
+
+.container .margin_top{
+	margin-top: 40px;
+}

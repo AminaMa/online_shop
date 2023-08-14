@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document  Mein Konto*/
+
+
+/*#anmelden_form{
+	display: none;
+}*/
+
+.container .links a:first-child {
+    border-bottom: none;
+}
+
+.form_box{
+	width: 380px;
+	height: 515px;
+	position: relative;
+	margin: 2% auto;
+	background: rgb(114 195 93 / 48%);
+	padding: 10px;
+	overflow: hidden;
+	    border-radius: 15px;
+}
+
+
+.button_box{
+	width: 220px;
+	margin: 35px auto;	
+	position: relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+
+}
+.toggle_btn{
+	padding: 10px 20px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+    color: #b3af3a;
+	position: relative;
+}
+
+
+#btn{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #017001;
+	color: #fff;	
+	border-radius: 30px;
+	transition: 0.5s;
+	
+}
+
+.input_gruppe_anmelden{
+	top: 150px;
+	position: absolute;
+	width: 280px;
+	transition: 0.5s;
+}
+.input_gruppe_register{
+	top: 120px;
+	position: absolute;
+	width: 280px;
+	transition: 0.5s;
+}
+
+.input_gruppe_register p{
+	text-align: center;
+	margin: 10px;
+
+}
+
+
+.input_gruppe_register p a{
+	text-decoration: none;
+	color: #017001;
+	font-size: 14px;
+}
+
+.input_gruppe_register p a:hover{
+	text-decoration: underline;
+	color: #0CA30C;
+}
+
+
+.input_feld{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+.submit_btn, .submit_btn{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	outline: none;
+	color:#fff;
+	background: #017001;
+	border: 0;
+	border-radius: 30px;
+}
+
+
+.check_box{
+	margin: 30px 10px 34px 0;
+}
+
+
+span{
+	color: #777;
+	font-size: 12px;
+	/*bottom: 117px;
+	position: absolute;*/
+}
+
+
+
+#anmelden{
+	left: 50px;
+}
+	
+
+#register{
+	left: 450px;
+}
+
+#anmelden input, #register input{
+	color: #fff;
+	font-size: 15px;}
+
+

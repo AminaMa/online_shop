@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document  Lebensmittel*/
+
+.links a:first-child {
+    border-bottom: none;
+}
+
+
+.links a:nth-of-type(2){
+	border-bottom: 1px solid var(--gold-color);
+	
+}
+
+section .container{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+
+
+.lebensmittel{
+	border: 1px solid var(--gold-color);
+	min-height: 14em;
+	width: 23em;
+	overflow: hidden;
+	border-radius: 10px;
+	margin: 10px;
+}
+
+
+.lebensmittel:hover .lebensmittel_img{
+	opacity: 0.9;
+}
+.lebensmittel_img{
+	margin-bottom: -4px;
+}
+
+.lebensmittel_img img{
+	width: 100%;
+}
+.lebensmittel_info{
+	display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    background-color: var(--main-color);
+    padding: 15px;
+	color: var(--gold-color);
+}
+
+
+.mehr_erfahren {
+	margin-top: 14px;
+	color: var(--gold-color);
+}
+
+.mehr_erfahren:hover{
+	color: var(--hover-color);
+	text-decoration: underline;
+}
+
+.container .margin_top{
+	margin-top: 40px;
+}

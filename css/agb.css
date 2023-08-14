@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document  AGB*/
+
+
+.links a:first-child {
+    border-bottom: none;
+}
+
+h1{	
+	margin-bottom: 80px;
+	color: var(--main-color);
+	font-size: 3rem;
+	letter-spacing: -1px;
+	text-align: center;
+	position: relative;
+	
+}
+h1::after {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 45%;
+    width: 7rem;
+    border-bottom: 2px solid var(--gold-color);
+  
+}
+
+.bold{
+	font-weight: bold;
+	font-size: 1rem;
+	
+}
+.agb_seite p{
+	color: #595959;
+	font-size: 0.8rem;
+	line-height: 1.6;
+}

@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document Datenschutz*/
+
+
+.links a:first-child {
+    border-bottom: none;
+}
+
+h1{	
+	margin-bottom: 80px;
+	color: var(--main-color);
+	font-size: 3rem;
+	letter-spacing: -1px;
+	text-align: center;
+	position: relative;
+	
+}
+h1::after {
+    content: "";
+    position: absolute;
+    top: 56px;
+    left: 38%;
+    width: 17rem;
+    border-bottom: 2px solid var(--gold-color);
+  
+}
+
+.bold{
+	font-weight: bold;
+	font-size: 1rem;
+	
+}
+
+.big_wort{
+	font-weight: bold;
+	font-size: 1.5rem;
+	
+}
+.container .daten_schutz_seite p{
+	color: #595959;
+	font-size: 0.8rem;
+	line-height: 1.6;
+}
